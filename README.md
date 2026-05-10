@@ -75,11 +75,11 @@ The old READMEs are also preserved in the [docs](docs) folder:
 - <a href="assets/docs/legacy/TODO.mkdn "> karxi's TODO</a>
 - <a href="assets/docs/legacy/CHANGELOG-karxi.mkdn "> karxi's CHANGELOG</a>
 
-## RUNN1NG FROM SOURC3 <img src="assets/smilies/tab.gif">
+## RUNNING FROM SOURCE <img src="assets/smilies/tab.gif">
 
 TBA
 
-### D3P3ND3NC13S
+### DEPENDENCIES
  - **[Python 3]**
      - Ideally 3.8 or later, though older versions may still work, I don't test them.
  - **[PyQt6]**
