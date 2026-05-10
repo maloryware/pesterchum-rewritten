@@ -1,16 +1,16 @@
-<!-- <h1 align="center" style="font-family: 'Courier New';">
+<h1 align="center" style="font-family: 'Courier New';">
     <b>
-        <img alt="PESTERCHUM" src="https://www.pesterchum.xyz/img/translogo23.png">
+        <img alt="PESTERCHUM" src="assets/img/pcrw.png">
         </b>
-    <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/Dpeta/pesterchum-alt-servers/total?style=for-the-badge"></a>
+    <a href="https://github.com/maloryware/pesterchum-rewritten/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/maloryware/pesterchum-rewritten/total?style=for-the-badge"></a>
     <a href="https://discord.gg/BbHvdwN"><img alt="Community Discord" src="https://img.shields.io/discord/761299023121350726?color=blue&label=COMMUNITY%20DISCORD&logo=discord&style=for-the-badge"></a>
     <a href="https://discord.gg/eKbP6pvUmZ"><img alt="Support Discord" src="https://img.shields.io/discord/906250212362842143?color=blue&label=SUPPORT%20DISCORD&logo=discord&style=for-the-badge"></a>
     <br>
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/Dpeta/pesterchum-alt-servers?style=for-the-badge">
-    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Dpeta/pesterchum-alt-servers?style=for-the-badge">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/maloryware/pesterchum-rewritten?style=for-the-badge">
+    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge">
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a>
 </h1>
-<img alt="PESTERCHUM" align="right" src="assets/img/Pesterchum.png"> -->
+<img alt="PESTERCHUM" align="right" src="assets/img/Pesterchum.png">
 
 # Pesterchum Rewritten
 
@@ -18,7 +18,7 @@
 
 This repository is a clean, modernized version of [ghostDunk's Pesterchum](https://github.com/illuminatedwax/pesterchum/), based on [Lumi's Fork (Pesterchum Alt Servers)](https://github.com/Dpeta/pesterchum-alt-servers/releases), written from the ground up.
 
-Some resources have been reused, such as 
+Some resources have been reused, such as themes and fonts.
 
 ## PLANNED FEATURES
 <details>
