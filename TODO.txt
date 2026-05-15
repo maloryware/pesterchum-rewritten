@@ -1,0 +1,6 @@
+[ ] 1. launch to main screen
+--------------------------------------
+[ ] -- receive a chumhandle, store it
+[ ] -- connect to irc.pesterchum.xyz
+[ ] -- load the default theme data and compose it
+[ ] -- display the chumhandle

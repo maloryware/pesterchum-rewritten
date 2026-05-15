@@ -1,0 +1,5 @@
+# ide
+
+.venv/
+.idea/
+.vscode/
