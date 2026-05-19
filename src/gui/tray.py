@@ -1,6 +1,6 @@
-from PyQt6.QtWidgets import QSystemTrayIcon
-from PyQt6.QtCore import QObject, pyqtSlot as Slot
-from PyQt6.QtGui import QIcon
+from PySide6.QtWidgets import QSystemTrayIcon
+from PySide6.QtCore import QObject, pyqtSlot as Slot
+from PySide6.QtGui import QIcon
 from util.common import LOGGER
 
 class PesterTray(QSystemTrayIcon):

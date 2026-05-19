@@ -1,4 +1,0 @@
-pyqt6
-certifi
-
-pyqt6-sip

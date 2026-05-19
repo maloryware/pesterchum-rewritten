@@ -1,5 +1,5 @@
 from uuid import UUID
-from PyQt6.QtGui import QColor
+from PySide6.QtGui import QColor
 from data.model.chum import Chum
 from data.model.quirk import Quirk
 from pesterchum import PesterchumApp

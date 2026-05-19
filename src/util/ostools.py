@@ -1,6 +1,6 @@
 # honoring the fabled ostools.py from the original project
 import os, sys, ctypes
-from PyQt6.QtCore import QStandardPaths
+from PySide6.QtCore import QStandardPaths
 
 
 def is_osx():

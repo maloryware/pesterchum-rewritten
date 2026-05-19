@@ -82,8 +82,9 @@ TBA
 ### DEPENDENCIES
  - **[Python 3]**
      - Ideally 3.8 or later, though older versions may still work, I don't test them.
- - **[PyQt6]**
+ - **[PySide6]**
 	- PyQt5 support will not be provided for this version, as the intention is to start fresh and define a new baseline.
+    - PyQt6 bindings have been replaced fwith PySide (official Python Qt bindings) for sake of easy integration with Qt Creator.
  - (Optional) **[certifi]**
  	- Provides alternative root certificates for TLS certificate validation. 
 	- Useful for MacOS, as Python doesn't use the system-provided certificates because of MacOS' outdated SSL library. Also miscellaneous systems without usable root certificates.

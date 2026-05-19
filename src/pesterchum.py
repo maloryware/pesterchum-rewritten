@@ -3,7 +3,7 @@
 import sys
 from logging import Logger
 
-from PyQt6.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication
 # from data.profile import Profile
 # from data.config import Config
 from gui.home import PesterHome
