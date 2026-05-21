@@ -3,3 +3,5 @@
 .venv/
 .idea/
 .vscode/
+uv.lock
+.python-version
