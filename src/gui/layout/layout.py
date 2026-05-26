@@ -1,3 +1,0 @@
-
-class PesterLayout:
-    raise NotImplementedError
