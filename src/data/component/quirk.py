@@ -14,3 +14,6 @@ class Quirk:
     enabled: bool   # "on" field
     group: str      # "group" field
     type: QuirkType # "type" field
+
+    def __init__(self):
+        raise NotImplementedError

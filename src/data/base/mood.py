@@ -1,2 +1,0 @@
-class Mood:
-    raise NotImplementedError
