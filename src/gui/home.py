@@ -1,5 +1,5 @@
 from PySide6 import QtCore
-from PySide6.QtCore import QSize
+from PySide6.QtCore import QSize, Slot
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLineEdit, QLabel
 
 from gui.dialog.profile_select import ProfileSelectWidget
@@ -8,32 +8,42 @@ from util.common import LOGGER
 
 class PesterHome(QWidget):
 
-    handle: str
+
     init: bool = False
+    handle: str
     profile_select: ProfileSelectWidget
+    # layout
     layout: QVBoxLayout
+    welcome_label: QLabel
+    # signals
+    # ...
+
+    @Slot()
+    def on_profile_select(self):
+        self.init = True
+        self.handle = self.profile_select.handle_field.text()
+        self.welcome_label.setText(f"Welcome, {self.handle}!")
 
     def __init__(self, *args, **kwargs):
 
         super().__init__(*args, **kwargs)
 
-        # define parent widget format
         self.setWindowTitle("Pesterchum")
         self.setFixedSize(QSize(800, 600))
-        # layout bullshit
-        self.layout = QVBoxLayout()
-        # ...
-        self.setLayout(self.layout)
+
+        self.build_layout()
+        self.connect_all()
+
         self.show()
 
-        # associate that one child layout to this
+
+    def build_layout(self) -> None:
+        self.layout = QVBoxLayout()
+        self.welcome_label = QLabel("Loading...")
+
+        self.layout.addWidget(self.welcome_label, alignment=QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.setLayout(self.layout)
+
+    def connect_all(self):
         self.profile_select = ProfileSelectWidget(self)
-
-
-    # define this method as something for buttons to connect to (Qt library, signal/slot logic)
-    @QtCore.pyqtSlot()
-    def on_profile_select(self):
-        self.init = True
-        self.handle = self.profile_select.handle_field.text()
-        self.layout.addWidget(QLabel(f"Welcome, {self.handle}!"), alignment=QtCore.Qt.AlignmentFlag.AlignHCenter)
 
