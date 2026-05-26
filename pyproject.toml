@@ -5,31 +5,8 @@ description = "A full rewrite of ghostDunk's Pesterchum."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "certifi>=2026.4.22",
+    "certifi>=2026.5.20",
     "pyside6>=6.11.1",
-]
-
-# i would love to meet the psychopath
-# who made this design choice!
-
-[tool.pyside6-project]
-files = [
-    "src/__main__.py",
-#    "src/pesterchum.py",
-    "src/gui/tray.py",
-    "src/gui/home.py",
-    "src/gui/layout/pester_layout.py",
-    "src/gui/dialog/profile_select.py",
-    "src/gui/base/pester_widget.py",
-    "src/irc/irc.py",
-    "src/util/common.py",
-    "src/util/ostools.py",
-    "src/data/config.py",
-    "src/data/base/chum.py",
-    "src/data/base/mood.py",
-    "src/data/base/quirk.py",
-    "src/data/base/theme.py",
-    "src/data/profile.py"
 ]
 
 
