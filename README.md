@@ -6,17 +6,17 @@
     <a href="https://discord.gg/BbHvdwN"><img alt="Community Discord" src="https://img.shields.io/discord/761299023121350726?color=blue&label=COMMUNITY%20DISCORD&logo=discord&style=for-the-badge"></a>
     <a href="https://discord.gg/eKbP6pvUmZ"><img alt="Support Discord" src="https://img.shields.io/discord/906250212362842143?color=blue&label=SUPPORT%20DISCORD&logo=discord&style=for-the-badge"></a>
     <br>
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/maloryware/pesterchum-rewritten?style=for-the-badge">
-    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge">
-    <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a>
+	<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/maloryware/pesterchum-rewritten?style=for-the-badge">
 </h1>
 <img alt="PESTERCHUM" align="right" src="assets/img/repo/Pesterchum.png">
 
+<!-- <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a> -->
+<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge"> -->
 # Pesterchum Rewritten
 
 *Pesterchum is an instant messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck.*
 
-This repository is a clean, modernized version of [ghostDunk's Pesterchum](https://github.com/illuminatedwax/pesterchum/), based on [Lumi's Fork (Pesterchum Alt Servers)](https://github.com/Dpeta/pesterchum-alt-servers/releases), written from the ground up.
+This repository is a clean, modernized version of [ghostDunk's Pesterchum](https://github.com/illuminatedwax/pesterchum/), based on [Lumi's Fork (Pesterchum Alt Servers)](https://github.com/Dpeta/pesterchum-alt-servers/), written from the ground up.
 
 Some resources have been reused, such as themes and fonts.
 
@@ -26,19 +26,18 @@ Some resources have been reused, such as themes and fonts.
 
  - Updated dependencies; [Python 2 --> Python 3](https://www.python.org/doc/sunset-python-2/) // [Qt4 --> Qt5 & Qt6](https://www.qt.io/blog/2014/11/27/qt-4-8-x-support-to-be-extended-for-another-year)
  - Server Selection GUI
- - Client -> Server [TLS/SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) encryption
+ - Client → Server [TLS/SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) encryption
  - UTF-8 encoded text (emojis, non-western characters)
  - IRCv3 metadata protocol usage for privacy ("`previously any IRC user could see who you were messaging since it would send out a public GETMOOD request`")
- *- Tentative support for communicating color and timeline via [IRCv3 Message Tags/TAGMSG](https://ircv3.net/specs/extensions/message-tags#the-tagmsg-tag-only-message)
+ - Tentative support for communicating color and timeline via [IRCv3 Message Tags/TAGMSG](https://ircv3.net/specs/extensions/message-tags#the-tagmsg-tag-only-message)
  - Expanded quirk customization: **Gradients**, **smilies/links exclusion**
- - Theme 
- - Funky [win95-theme](https://www.pesterchum.xyz/img/win95.png) by [cubicSimulation](https://twitter.com/cubicSimulation) <img width="24" src="themes/win95chum/trayiconpng">
+ - Funky [win95-theme](https://www.pesterchum.xyz/img/win95.png) by [cubicSimulation](https://twitter.com/cubicSimulation) <img width="24" src="assets/themes/win95chum/trayicon.png">
  - Works better with high resolutions since size scales via Qt's [high DPI scaling](https://doc.qt.io/qt-6/highdpi.html) (https://github.com/Dpeta/pesterchum-alt-servers/issues/66)
  - Usable with Wayland on Linux, it used to break because of the way Pesterchum set its window position
  - Excecutables build with PyInstaller, allows for a smaller release filesize + dlls can be include with the binary
- - Lots of fixes for miscellaneous crashes/issues. . . check out the <a href="CHANGELOG.md">CHANGELOG</a>! :3
+ - Lots of fixes for miscellaneous crashes/issues. . . check out the <a href="assets/alt-servers/CHANGELOG.md">CHANGELOG</a>! :3
 </details>
- - Built-in auto-updater
+- Built-in auto-updater
 
 
 [CHANGELOG.md]: https://github.com/Dpeta/pesterchum-alt-servers/blob/main/CHANGELOG.md
