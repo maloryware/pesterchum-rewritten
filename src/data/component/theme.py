@@ -3,12 +3,12 @@ import os
 from string import Template
 from typing import Any
 
-from system.directories import get_theme_dir
-from system.ostools import get_data_dir
+from data.structure.pesterchum_data import PesterchumData
+from ostools.dirtools import get_theme_dir, get_data_dir
 from util.common import LOGGER
 
 
-class Theme(dict):
+class PesterchumTheme(dict, PesterchumData):
     """
     Constitutes a Pesterchum Theme.
 
@@ -30,7 +30,7 @@ class Theme(dict):
     https://mocchapi.itch.io/pesterchum-theme-editor-2000
     """
 
-    inherited: Theme
+    inherited: PesterchumTheme
 
     # yes, "call to __init__ of super class is missed"
     # i'm not sure how necessary it is, but original
@@ -40,57 +40,62 @@ class Theme(dict):
     # noinspection PyMissingConstructor
     def __init__(self, name: str = "pesterchum"):
 
-        self._path = Theme._get_path(name)
-        self.update(self._load_theme())
+        self._path = PesterchumTheme._get_path(name)
+        self.update(self.load())
 
         if "inherits" in self:
-            self.inherited = Theme(self["inherits"])
+            self.inherited = PesterchumTheme(self["inherits"])
 
-    # TODO: check responses on discord to see
-    #   if this check is in the right place
+    # noinspection PyTypeChecker
     @staticmethod
-    def get_available_themes(include_repo_themes = False):
-        repo_themes: set[str] = set()
-        local_themes: set[str] = set()
-        themes: list[str] = []
+    def get_available_themes(include_repo_themes=True):
+        themes: set[str] = set()
 
-        for _, dir_names, _ in os.walk(get_theme_dir()):
-            # noinspection PyTypeChecker
-            repo_themes = {_dir for _dir in dir_names}
+        # this uses set comprehension to gather all the themes and store them to one set
+        # the 'break' instruction is there to stop os.walk() from recursively searching dirs,
+        # as we only care for what's at the root directory
+        # ~maloryware
 
-        # ???
-        if get_data_dir() is not None:
-            for _, dir_names, _ in os.walk("themes"):
-                local_themes = {_dir for _dir in dir_names}
+        for dirpath, dir_names, z in os.walk(get_theme_dir()):
+            themes.update({theme for theme in dir_names if include_repo_themes})
+            break
 
-        themes.extend(local_themes)
-        themes.extend(repo_themes)
-        themes.sort(key=str.casefold)
+        for dirpath, dir_names, _ in os.walk("../assets/themes"):
+            themes.update({theme for theme in dir_names})
+            break
 
-        return themes
+        output = list(themes)
+        output.sort(key=str.casefold)
+        return output
 
-    def _load_theme(self) -> Theme:
+    # ~ PesterchumData::load ~
+    def load(self) -> PesterchumTheme:
         try:
             with open(self._path + "style.json") as fp:
                 return json.load(fp, object_hook=self._hook_theme_file)
         except OSError:
             return json.loads("{}")
 
+    # ~ PesterchumData::save ~
+    def save(self) -> None:
+        raise IOError("Pesterchum themes cannot be updated from the client")
+
     @staticmethod
     def _get_path(name: str) -> str:
         _path = None
 
         for p in [
-            get_data_dir() + f"themes/{name}/", # downloaded themes
-            f"themes/{name}/" # local themes
+            get_data_dir() + f"themes/{name}",  # downloaded themes
+            f"themes/{name}"  # local themes
         ]:
             if os.path.exists(p):
                 return p
 
-        if name is "pesterchum":
+        LOGGER.info(f"Could not find {name} - loading default theme...")
+        if name == "pesterchum":
             LOGGER.critical("could not locate default theme!!")
             raise FileNotFoundError
-        return Theme._get_path("pesterchum")
+        return PesterchumTheme._get_path("pesterchum")
 
     # TODO: worth revisiting to make a little DRYer
     # [original: lisanne]
@@ -111,3 +116,7 @@ class Theme(dict):
                         templ = Template(item)
                         value[idx] = templ.safe_substitute(path=self._path)
         return theme
+
+    # ~ PesterchumData::get_dir ~
+    def get_dir(self) -> str:
+        return PesterchumTheme._get_path(self._path)

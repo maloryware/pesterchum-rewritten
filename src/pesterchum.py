@@ -3,20 +3,30 @@
 import sys
 from logging import Logger
 
-from PySide6.QtWidgets import QApplication
-# from data.profile import Profile
+from PySide6.QtCore import QObject
+
+
+# from data.component import Profile
 # from data.config import Config
 
 # TODO: find a good way to hold global data
 #       for now, we're making PesterchumApp cascade down...
 #       ...which genuinely seems like a terrible idea.
 
-class PesterchumApp(QApplication):
+# TODO: important things to take note of
+#   - validation of EVERYTHING directory-related should take place on startup
+#   - data should be centralized and passed down to normalize access logic
+#   - contains an
 
-    # profile: Profile
-    # settings: Config
+class Pesterchum(QObject):
 
-    def __init__(self, argv) -> None:
-        super().__init__(argv)
-        # self.profile = Profile(self)
-        # self.settings = Config()
+    # user: UserProfile
+    # config: PesterchumConfig
+
+    def __init__(self, /) -> None:
+        self.app = QApplication()
+        # self.user = UserProfile(self)
+        # self.config = PesterchumConfig()
+
+        super().__init__()
+        raise NotImplementedError

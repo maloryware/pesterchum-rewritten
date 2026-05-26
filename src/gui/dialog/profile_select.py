@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QDialog, QCompleter
+from PySide6.QtGui import QAction
 
-
-# Test format --- this needs to be a Builder/Factory system.
+# Test format --- this needs to be a Builder/Factory ostools.
 # if not, it's just wrapping back around to what mocha said
 
 # and if this proves to be impossible, we're moving to java
@@ -28,7 +28,6 @@ class ProfileSelectWidget(QDialog):
         self.select_reason = QLabel("Enter a chumhandle.")
         # add label object to the primary layout
         self.layout.addWidget(self.select_reason)
-
 
         self.handle_label = QLabel("CHUMHANDLE: ")
         # create editable text field
