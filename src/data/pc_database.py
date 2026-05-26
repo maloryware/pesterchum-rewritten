@@ -1,7 +1,7 @@
 import json
 import os.path
 
-from data.structure.pesterchum_data import PesterchumData
+from data.structure.pc_data import PesterchumData
 from ostools.dirtools import get_data_dir
 
 

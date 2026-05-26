@@ -3,7 +3,7 @@ import os
 from string import Template
 from typing import Any
 
-from data.structure.pesterchum_data import PesterchumData
+from data.structure.pc_data import PesterchumData
 from ostools.dirtools import get_theme_dir, get_data_dir
 from util.common import LOGGER
 

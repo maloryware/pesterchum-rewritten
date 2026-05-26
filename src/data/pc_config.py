@@ -1,4 +1,4 @@
-from data.structure.pesterchum_data import PesterchumData
+from data.structure.pc_data import PesterchumData
 from pesterchum import Pesterchum
 
 

@@ -2,7 +2,7 @@ from typing import Any
 from uuid import UUID
 from PySide6.QtGui import QColor
 from data.component.mood import Mood, Moods
-from data.database import PesterchumDB
+from data.pc_database import PesterchumDB
 
 
 # directory: {data}/{id}/
