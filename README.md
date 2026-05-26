@@ -8,7 +8,7 @@
     <br>
 	<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/maloryware/pesterchum-rewritten?style=for-the-badge">
 </h1>
-<img alt="PESTERCHUM" align="right" src="assets/img/repo/Pesterchum.png">
+<img alt="PESTERCHUM" align="right" src="assets/repo/Pesterchum.png">
 
 <!-- <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a> -->
 <!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge"> -->
