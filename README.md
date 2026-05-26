@@ -10,8 +10,8 @@
 </h1>
 <img alt="PESTERCHUM" align="right" src="assets/img/repo/Pesterchum.png">
 
-<!-- <a href="https://github.com/psf/black"><img alt="Code style: black" srcs="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a> -->
-<!-- <img alt="Lines of code" srcs="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge"> -->
+<!-- <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a> -->
+<!-- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge"> -->
 # Pesterchum Rewritten
 
 *Pesterchum is an instant messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck.*
