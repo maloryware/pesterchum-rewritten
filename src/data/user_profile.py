@@ -1,7 +1,7 @@
 import os.path
 
-from data.component.profile import PesterchumProfile
-from data.structure.pesterchum_data import PesterchumData
+from data.component.pc_profile import PesterchumProfile
+from data.structure.pc_data import PesterchumData
 from ostools.dirtools import get_profile_dir
 
 
