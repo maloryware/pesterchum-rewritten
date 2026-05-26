@@ -1,6 +1,6 @@
 fixes/patches:
 - add block button to user list
-- 
+
 features to consider adding, based on requests from the server:
 - obfuscate passwords in some capacity
 - opening pesterchum with a running instance prompts user to select

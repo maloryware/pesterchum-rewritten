@@ -2,10 +2,20 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from data.component.pc_theme import PesterchumTheme
+from data.component.theme import PesterchumTheme
 from ostools.dirtools import validate_data_dir
 from util.common import LOGGER
 
+'''
+
+    UP NEXT:
+    - complete profile save/load
+    - complete settings save/load
+    - create profile selection widget PROPERLY
+
+    REQUIRES TESTING:
+    - theme data
+'''
 
 def main():
 

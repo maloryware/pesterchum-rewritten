@@ -17,7 +17,6 @@ from PySide6.QtWidgets import QApplication
 # TODO: important things to take note of
 #   - validation of EVERYTHING directory-related should take place on startup
 #   - data should be centralized and passed down to normalize access logic
-#   - contains an
 
 class Pesterchum(QObject):
 

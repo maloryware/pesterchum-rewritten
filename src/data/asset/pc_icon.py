@@ -2,7 +2,7 @@ from typing import Tuple
 
 from PySide6.QtGui import QIcon, QPixmap
 
-from data.component.pc_theme import PesterchumTheme
+from data.component.theme import PesterchumTheme
 from util.assets import Assets
 from util.common import LOGGER
 

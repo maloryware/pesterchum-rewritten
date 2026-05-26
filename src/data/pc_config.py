@@ -20,9 +20,9 @@ class PesterchumConfig(PesterchumData):
     show_seconds: bool = False
     show_more_info_in_memo: bool = False
     use_animated_smilies: bool = True
-    random_encounters: bool = False # imported from component
+    random_encounters: bool = False # imported from profile
     embed_trusted_links: list[str] = []
-    mentions: list[str] = None # imported from component
+    mentions: list[str] = None # imported from profile
     trusted_domains: list[str]
 
     ### interface ###
@@ -63,15 +63,15 @@ class PesterchumConfig(PesterchumData):
     notify_on_update: bool = True
 
     ### themes ###
-    selected_theme = None # imported from component
-    pesterdunk: bool = True # imported from component
+    selected_theme = None # imported from profile
+    pesterdunk: bool = True # imported from profile
 
     ### IRC ###
-    irc_compat_mode: bool = False # imported from component
-    force_initials: bool = False # imported from component
-    auto_identify: bool = False # imported from component
-    user_idkey: str = None # imported from component
-    auto_join_memos: list[str] = [] # imported from component
+    irc_compat_mode: bool = False # imported from profile
+    force_initials: bool = False # imported from profile
+    auto_identify: bool = False # imported from profile
+    user_idkey: str = None # imported from profile
+    auto_join_memos: list[str] = [] # imported from profile
 
     ### hidden ###
     default_profile: str

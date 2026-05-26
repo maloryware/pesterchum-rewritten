@@ -1,14 +1,14 @@
 import os.path
 
-from data.component.pc_profile import PesterchumProfile
+from data.component.id import PesterchumID
 from data.structure.pc_data import PesterchumData
 from ostools.dirtools import get_profile_dir
 
 
-class UserProfile(PesterchumData):
+class PesterchumProfile(PesterchumData):
 
-    profile: PesterchumProfile
-    chums: list[PesterchumProfile]
+    profile: PesterchumID
+    chums: list[PesterchumID]
     mentions: list[str]
     blocklist: list[str]
     autojoins: list[str]
@@ -20,7 +20,7 @@ class UserProfile(PesterchumData):
     quirks_path: str
 
 
-    def __init__(self, profile: PesterchumProfile | None):
+    def __init__(self, profile: PesterchumID | None):
         if profile is None:
             raise NotImplementedError("No handling for invalid profiles atm ;(")
         self.profile = profile
@@ -46,11 +46,13 @@ class UserProfile(PesterchumData):
             return
         raise NotImplementedError
 
+
     # ~ PesterchumData::load ~
     def load(self) -> None:
         if self._is_temp_profile():
             return
         raise NotImplementedError
+
 
     # ~ PesterchumData::get_dir ~
     def get_dir(self) -> str:
