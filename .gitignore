@@ -5,3 +5,4 @@
 .vscode/
 uv.lock
 .python-version
+/.pesterchum_data/

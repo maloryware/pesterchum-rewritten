@@ -1,6 +1,6 @@
 <h1 align="center" style="font-family: 'Courier New';">
     <b>
-        <img alt="PESTERCHUM" src="assets/img/pcrw.png">
+        <img alt="PESTERCHUM" src="assets/img/repo/pcrw.png">
         </b>
     <a href="https://github.com/maloryware/pesterchum-rewritten/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/maloryware/pesterchum-rewritten/total?style=for-the-badge"></a>
     <a href="https://discord.gg/BbHvdwN"><img alt="Community Discord" src="https://img.shields.io/discord/761299023121350726?color=blue&label=COMMUNITY%20DISCORD&logo=discord&style=for-the-badge"></a>
@@ -10,7 +10,7 @@
     <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/maloryware/pesterchum-rewritten?style=for-the-badge">
     <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000?style=for-the-badge"></a>
 </h1>
-<img alt="PESTERCHUM" align="right" src="assets/img/Pesterchum.png">
+<img alt="PESTERCHUM" align="right" src="assets/img/repo/Pesterchum.png">
 
 # Pesterchum Rewritten
 
@@ -81,10 +81,10 @@ TBA
 
 ### DEPENDENCIES
  - **[Python 3]**
-     - Ideally 3.8 or later, though older versions may still work, I don't test them.
+     - Ideally 3.8 or later. Though older versions may still work, I don't intend to test them.
  - **[PySide6]**
 	- PyQt5 support will not be provided for this version, as the intention is to start fresh and define a new baseline.
-    - PyQt6 bindings have been replaced fwith PySide (official Python Qt bindings) for sake of easy integration with Qt Creator.
+    - PyQt6 bindings have been replaced with PySide (official Python Qt bindings).
  - (Optional) **[certifi]**
  	- Provides alternative root certificates for TLS certificate validation. 
 	- Useful for MacOS, as Python doesn't use the system-provided certificates because of MacOS' outdated SSL library. Also miscellaneous systems without usable root certificates.
@@ -99,68 +99,68 @@ TBA
 
 ## SMILIES <img height="32" alt="pesterchum 'WHAT DID YOU DO' smilie" src="assets/smilies/whatdidyoudo.gif">
 
-|Text|Smilie|
-|:--- | :--- |
-|`:rancorous:`|<img alt=':rancorous: pesterchum smilie/emote' src='assets/smilies/pc_rancorous.png'>|
-|`:apple:`|<img alt=':apple: pesterchum smilie/emote' src='assets/smilies/apple.png'>|
-|`:bathearst:`|<img alt=':bathearst: pesterchum smilie/emote' src='assets/smilies/bathearst.png'>|
-|`:cathearst:`|<img alt=':cathearst: pesterchum smilie/emote' src='assets/smilies/cathearst.png'>|
-|`:woeful:`|<img alt=':woeful: pesterchum smilie/emote' src='assets/smilies/pc_bemused.png'>|
-|`:sorrow:`|<img alt=':sorrow: pesterchum smilie/emote' src='assets/smilies/blacktear.png'>|
-|`:pleasant:`|<img alt=':pleasant: pesterchum smilie/emote' src='assets/smilies/pc_pleasant.png'>|
-|`:blueghost:`|<img alt=':blueghost: pesterchum smilie/emote' src='assets/smilies/blueslimer.gif'>|
-|`:slimer:`|<img alt=':slimer: pesterchum smilie/emote' src='assets/smilies/slimer.gif'>|
-|`:candycorn:`|<img alt=':candycorn: pesterchum smilie/emote' src='assets/smilies/candycorn.png'>|
-|`:cheer:`|<img alt=':cheer: pesterchum smilie/emote' src='assets/smilies/cheer.gif'>|
-|`:duhjohn:`|<img alt=':duhjohn: pesterchum smilie/emote' src='assets/smilies/confusedjohn.gif'>|
-|`:datrump:`|<img alt=':datrump: pesterchum smilie/emote' src='assets/smilies/datrump.png'>|
-|`:facepalm:`|<img alt=':facepalm: pesterchum smilie/emote' src='assets/smilies/facepalm.png'>|
-|`:bonk:`|<img alt=':bonk: pesterchum smilie/emote' src='assets/smilies/headbonk.gif'>|
-|`:mspa:`|<img alt=':mspa: pesterchum smilie/emote' src='assets/smilies/mspa_face.png'>|
-|`:gun:`|<img alt=':gun: pesterchum smilie/emote' src='assets/smilies/mspa_reader.gif'>|
-|`:cal:`|<img alt=':cal: pesterchum smilie/emote' src='assets/smilies/lilcal.png'>|
-|`:amazedfirman:`|<img alt=':amazedfirman: pesterchum smilie/emote' src='assets/smilies/pc_amazedfirman.png'>|
-|`:amazed:`|<img alt=':amazed: pesterchum smilie/emote' src='assets/smilies/pc_amazed.png'>|
-|`:chummy:`|<img alt=':chummy: pesterchum smilie/emote' src='assets/smilies/pc_chummy.png'>|
-|`:cool:`|<img alt=':cool: pesterchum smilie/emote' src='assets/smilies/pccool.png'>|
-|`:smooth:`|<img alt=':smooth: pesterchum smilie/emote' src='assets/smilies/pccool.png'>|
-|`:distraughtfirman:`|<img alt=':distraughtfirman: pesterchum smilie/emote' src='assets/smilies/pc_distraughtfirman.png'>|
-|`:distraught:`|<img alt=':distraught: pesterchum smilie/emote' src='assets/smilies/pc_distraught.png'>|
-|`:insolent:`|<img alt=':insolent: pesterchum smilie/emote' src='assets/smilies/pc_insolent.png'>|
-|`:bemused:`|<img alt=':bemused: pesterchum smilie/emote' src='assets/smilies/pc_bemused.png'>|
-|`:3:`|<img alt=':3: pesterchum smilie/emote' src='assets/smilies/pckitty.png'>|
-|`:mystified:`|<img alt=':mystified: pesterchum smilie/emote' src='assets/smilies/pc_mystified.png'>|
-|`:pranky:`|<img alt=':pranky: pesterchum smilie/emote' src='assets/smilies/pc_pranky.png'>|
-|`:tense:`|<img alt=':tense: pesterchum smilie/emote' src='assets/smilies/pc_tense.png'>|
-|`:record:`|<img alt=':record: pesterchum smilie/emote' src='assets/smilies/record.gif'>|
-|`:squiddle:`|<img alt=':squiddle: pesterchum smilie/emote' src='assets/smilies/squiddle.gif'>|
-|`:tab:`|<img alt=':tab: pesterchum smilie/emote' src='assets/smilies/tab.gif'>|
-|`:beetip:`|<img alt=':beetip: pesterchum smilie/emote' src='assets/smilies/theprofessor.png'>|
-|`:flipout:`|<img alt=':flipout: pesterchum smilie/emote' src='assets/smilies/weasel.gif'>|
-|`:befuddled:`|<img alt=':befuddled: pesterchum smilie/emote' src='assets/smilies/what.png'>|
-|`:pumpkin:`|<img alt=':pumpkin: pesterchum smilie/emote' src='assets/smilies/whatpumpkin.png'>|
-|`:trollcool:`|<img alt=':trollcool: pesterchum smilie/emote' src='assets/smilies/trollcool.png'>|
-|`:jadecry:`|<img alt=':jadecry: pesterchum smilie/emote' src='assets/smilies/jadespritehead.gif'>|
-|`:ecstatic:`|<img alt=':ecstatic: pesterchum smilie/emote' src='assets/smilies/ecstatic.png'>|
-|`:relaxed:`|<img alt=':relaxed: pesterchum smilie/emote' src='assets/smilies/relaxed.png'>|
-|`:discontent:`|<img alt=':discontent: pesterchum smilie/emote' src='assets/smilies/discontent.png'>|
-|`:devious:`|<img alt=':devious: pesterchum smilie/emote' src='assets/smilies/devious.png'>|
-|`:sleek:`|<img alt=':sleek: pesterchum smilie/emote' src='assets/smilies/sleek.png'>|
-|`:detestful:`|<img alt=':detestful: pesterchum smilie/emote' src='assets/smilies/detestful.png'>|
-|`:mirthful:`|<img alt=':mirthful: pesterchum smilie/emote' src='assets/smilies/mirthful.png'>|
-|`:manipulative:`|<img alt=':manipulative: pesterchum smilie/emote' src='assets/smilies/manipulative.png'>|
-|`:vigorous:`|<img alt=':vigorous: pesterchum smilie/emote' src='assets/smilies/vigorous.png'>|
-|`:perky:`|<img alt=':perky: pesterchum smilie/emote' src='assets/smilies/perky.png'>|
-|`:acceptant:`|<img alt=':acceptant: pesterchum smilie/emote' src='assets/smilies/acceptant.png'>|
-|`:olliesouty:`|<img alt=':olliesouty: pesterchum smilie/emote' src='assets/smilies/olliesouty.gif'>|
-|`:billiards:`|<img alt=':billiards: pesterchum smilie/emote' src='assets/smilies/poolballS.gif'>|
-|`:billiardslarge:`|<img alt=':billiardslarge: pesterchum smilie/emote' src='assets/smilies/poolballL.gif'>|
-|`:whatdidyoudo:`|<img alt=':whatdidyoudo: pesterchum smilie/emote' src='assets/smilies/whatdidyoudo.gif'>|
-|`:brocool:`|<img alt=':brocool: pesterchum smilie/emote' src='assets/smilies/pcstrider.png'>|
-|`:trollbro:`|<img alt=':trollbro: pesterchum smilie/emote' src='assets/smilies/trollbro.png'>|
-|`:playagame:`|<img alt=':playagame: pesterchum smilie/emote' src='assets/smilies/saw.gif'>|
-|`:trollc00l:`|<img alt=':trollc00l: pesterchum smilie/emote' src='assets/smilies/trollc00l.gif'>|
-|`:suckers:`|<img alt=':suckers: pesterchum smilie/emote' src='assets/smilies/Suckers.gif'>|
-|`:scorpio:`|<img alt=':scorpio: pesterchum smilie/emote' src='assets/smilies/scorpio.gif'>|
-|`:shades:`|<img alt=':shades: pesterchum smilie/emote' src='assets/smilies/shades.png'>|
-|`:honk:`|<img alt=':honk: pesterchum smilie/emote' src='assets/smilies/honk.png'>|
+| Text                 | Smilie                                                                                              |
+|:---------------------|:----------------------------------------------------------------------------------------------------|
+| `:rancorous:`        | <img alt=':rancorous: pesterchum smilie/emote' src='assets/smilies/pc_rancorous.png'>               |
+| `:apple:`            | <img alt=':apple: pesterchum smilie/emote' src='assets/smilies/apple.png'>                          |
+| `:bathearst:`        | <img alt=':bathearst: pesterchum smilie/emote' src='assets/smilies/bathearst.png'>                  |
+| `:cathearst:`        | <img alt=':cathearst: pesterchum smilie/emote' src='assets/smilies/cathearst.png'>                  |
+| `:woeful:`           | <img alt=':woeful: pesterchum smilie/emote' src='assets/smilies/pc_bemused.png'>                    |
+| `:sorrow:`           | <img alt=':sorrow: pesterchum smilie/emote' src='assets/smilies/blacktear.png'>                     |
+| `:pleasant:`         | <img alt=':pleasant: pesterchum smilie/emote' src='assets/smilies/pc_pleasant.png'>                 |
+| `:blueghost:`        | <img alt=':blueghost: pesterchum smilie/emote' src='assets/smilies/blueslimer.gif'>                 |
+| `:slimer:`           | <img alt=':slimer: pesterchum smilie/emote' src='assets/smilies/slimer.gif'>                        |
+| `:candycorn:`        | <img alt=':candycorn: pesterchum smilie/emote' src='assets/smilies/candycorn.png'>                  |
+| `:cheer:`            | <img alt=':cheer: pesterchum smilie/emote' src='assets/smilies/cheer.gif'>                          |
+| `:duhjohn:`          | <img alt=':duhjohn: pesterchum smilie/emote' src='assets/smilies/confusedjohn.gif'>                 |
+| `:datrump:`          | <img alt=':datrump: pesterchum smilie/emote' src='assets/smilies/datrump.png'>                      |
+| `:facepalm:`         | <img alt=':facepalm: pesterchum smilie/emote' src='assets/smilies/facepalm.png'>                    |
+| `:bonk:`             | <img alt=':bonk: pesterchum smilie/emote' src='assets/smilies/headbonk.gif'>                        |
+| `:mspa:`             | <img alt=':mspa: pesterchum smilie/emote' src='assets/smilies/mspa_face.png'>                       |
+| `:gun:`              | <img alt=':gun: pesterchum smilie/emote' src='assets/smilies/mspa_reader.gif'>                      |
+| `:cal:`              | <img alt=':cal: pesterchum smilie/emote' src='assets/smilies/lilcal.png'>                           |
+| `:amazedfirman:`     | <img alt=':amazedfirman: pesterchum smilie/emote' src='assets/smilies/pc_amazedfirman.png'>         |
+| `:amazed:`           | <img alt=':amazed: pesterchum smilie/emote' src='assets/smilies/pc_amazed.png'>                     |
+| `:chummy:`           | <img alt=':chummy: pesterchum smilie/emote' src='assets/smilies/pc_chummy.png'>                     |
+| `:cool:`             | <img alt=':cool: pesterchum smilie/emote' src='assets/smilies/pccool.png'>                          |
+| `:smooth:`           | <img alt=':smooth: pesterchum smilie/emote' src='assets/smilies/pccool.png'>                        |
+| `:distraughtfirman:` | <img alt=':distraughtfirman: pesterchum smilie/emote' src='assets/smilies/pc_distraughtfirman.png'> |
+| `:distraught:`       | <img alt=':distraught: pesterchum smilie/emote' src='assets/smilies/pc_distraught.png'>             |
+| `:insolent:`         | <img alt=':insolent: pesterchum smilie/emote' src='assets/smilies/pc_insolent.png'>                 |
+| `:bemused:`          | <img alt=':bemused: pesterchum smilie/emote' src='assets/smilies/pc_bemused.png'>                   |
+| `:3:`                | <img alt=':3: pesterchum smilie/emote' src='assets/smilies/pckitty.png'>                            |
+| `:mystified:`        | <img alt=':mystified: pesterchum smilie/emote' src='assets/smilies/pc_mystified.png'>               |
+| `:pranky:`           | <img alt=':pranky: pesterchum smilie/emote' src='assets/smilies/pc_pranky.png'>                     |
+| `:tense:`            | <img alt=':tense: pesterchum smilie/emote' src='assets/smilies/pc_tense.png'>                       |
+| `:record:`           | <img alt=':record: pesterchum smilie/emote' src='assets/smilies/record.gif'>                        |
+| `:squiddle:`         | <img alt=':squiddle: pesterchum smilie/emote' src='assets/smilies/squiddle.gif'>                    |
+| `:tab:`              | <img alt=':tab: pesterchum smilie/emote' src='assets/smilies/tab.gif'>                              |
+| `:beetip:`           | <img alt=':beetip: pesterchum smilie/emote' src='assets/smilies/theprofessor.png'>                  |
+| `:flipout:`          | <img alt=':flipout: pesterchum smilie/emote' src='assets/smilies/weasel.gif'>                       |
+| `:befuddled:`        | <img alt=':befuddled: pesterchum smilie/emote' src='assets/smilies/what.png'>                       |
+| `:pumpkin:`          | <img alt=':pumpkin: pesterchum smilie/emote' src='assets/smilies/whatpumpkin.png'>                  |
+| `:trollcool:`        | <img alt=':trollcool: pesterchum smilie/emote' src='assets/smilies/trollcool.png'>                  |
+| `:jadecry:`          | <img alt=':jadecry: pesterchum smilie/emote' src='assets/smilies/jadespritehead.gif'>               |
+| `:ecstatic:`         | <img alt=':ecstatic: pesterchum smilie/emote' src='assets/smilies/ecstatic.png'>                    |
+| `:relaxed:`          | <img alt=':relaxed: pesterchum smilie/emote' src='assets/smilies/relaxed.png'>                      |
+| `:discontent:`       | <img alt=':discontent: pesterchum smilie/emote' src='assets/smilies/discontent.png'>                |
+| `:devious:`          | <img alt=':devious: pesterchum smilie/emote' src='assets/smilies/devious.png'>                      |
+| `:sleek:`            | <img alt=':sleek: pesterchum smilie/emote' src='assets/smilies/sleek.png'>                          |
+| `:detestful:`        | <img alt=':detestful: pesterchum smilie/emote' src='assets/smilies/detestful.png'>                  |
+| `:mirthful:`         | <img alt=':mirthful: pesterchum smilie/emote' src='assets/smilies/mirthful.png'>                    |
+| `:manipulative:`     | <img alt=':manipulative: pesterchum smilie/emote' src='assets/smilies/manipulative.png'>            |
+| `:vigorous:`         | <img alt=':vigorous: pesterchum smilie/emote' src='assets/smilies/vigorous.png'>                    |
+| `:perky:`            | <img alt=':perky: pesterchum smilie/emote' src='assets/smilies/perky.png'>                          |
+| `:acceptant:`        | <img alt=':acceptant: pesterchum smilie/emote' src='assets/smilies/acceptant.png'>                  |
+| `:olliesouty:`       | <img alt=':olliesouty: pesterchum smilie/emote' src='assets/smilies/olliesouty.gif'>                |
+| `:billiards:`        | <img alt=':billiards: pesterchum smilie/emote' src='assets/smilies/poolballS.gif'>                  |
+| `:billiardslarge:`   | <img alt=':billiardslarge: pesterchum smilie/emote' src='assets/smilies/poolballL.gif'>             |
+| `:whatdidyoudo:`     | <img alt=':whatdidyoudo: pesterchum smilie/emote' src='assets/smilies/whatdidyoudo.gif'>            |
+| `:brocool:`          | <img alt=':brocool: pesterchum smilie/emote' src='assets/smilies/pcstrider.png'>                    |
+| `:trollbro:`         | <img alt=':trollbro: pesterchum smilie/emote' src='assets/smilies/trollbro.png'>                    |
+| `:playagame:`        | <img alt=':playagame: pesterchum smilie/emote' src='assets/smilies/saw.gif'>                        |
+| `:trollc00l:`        | <img alt=':trollc00l: pesterchum smilie/emote' src='assets/smilies/trollc00l.gif'>                  |
+| `:suckers:`          | <img alt=':suckers: pesterchum smilie/emote' src='assets/smilies/Suckers.gif'>                      |
+| `:scorpio:`          | <img alt=':scorpio: pesterchum smilie/emote' src='assets/smilies/scorpio.gif'>                      |
+| `:shades:`           | <img alt=':shades: pesterchum smilie/emote' src='assets/smilies/shades.png'>                        |
+| `:honk:`             | <img alt=':honk: pesterchum smilie/emote' src='assets/smilies/honk.png'>                            |
