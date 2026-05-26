@@ -4,6 +4,7 @@ import sys
 from logging import Logger
 
 from PySide6.QtCore import QObject
+from PySide6.QtWidgets import QApplication
 
 
 # from data.component import Profile

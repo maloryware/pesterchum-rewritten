@@ -1,6 +1,10 @@
 from enum import Enum
 
-from data.structure.pesterchum_data import PesterchumData
+from data.asset.pc_icon import PesterchumIcon
+from data.component.pc_theme import PesterchumTheme
+from data.structure.pc_data import PesterchumData
+from util.assets import Assets
+from util.common import LOGGER
 
 
 class Moods(Enum):
@@ -52,3 +56,9 @@ class Mood:
         if isinstance(mood, int):
             self.mood = Moods.get(mood)
         raise NotImplementedError
+
+    def name(self):
+        return Moods.get(self.mood.__str__())
+
+    def icon(self, theme: PesterchumTheme):
+        return PesterchumIcon.of(self.name(), theme)

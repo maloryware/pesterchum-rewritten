@@ -2,7 +2,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from data.component.theme import PesterchumTheme
+from data.component.pc_theme import PesterchumTheme
 from ostools.dirtools import validate_data_dir
 from util.common import LOGGER
 

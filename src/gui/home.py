@@ -1,12 +1,12 @@
 from PySide6 import QtCore
 from PySide6.QtCore import QSize, Slot
-from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLineEdit, QLabel
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
+from data.structure.pc_widget import PesterchumWidget
 from gui.dialog.profile_select import ProfileSelectWidget
-from util.common import LOGGER
 
 
-class PesterHome(QWidget):
+class PesterHome(QWidget, PesterchumWidget):
 
 
     init: bool = False
@@ -31,19 +31,19 @@ class PesterHome(QWidget):
         self.setWindowTitle("Pesterchum")
         self.setFixedSize(QSize(800, 600))
 
-        self.build_layout()
-        self.connect_all()
+        self.build()
+        self.assign_signals()
 
         self.show()
 
 
-    def build_layout(self) -> None:
+    def build(self) -> None:
         self.layout = QVBoxLayout()
         self.welcome_label = QLabel("Loading...")
 
         self.layout.addWidget(self.welcome_label, alignment=QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.setLayout(self.layout)
 
-    def connect_all(self):
+    def assign_signals(self):
         self.profile_select = ProfileSelectWidget(self)
 

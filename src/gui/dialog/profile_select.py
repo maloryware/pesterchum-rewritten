@@ -1,12 +1,15 @@
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QDialog, QCompleter
 from PySide6.QtGui import QAction
 
-# Test format --- this needs to be a Builder/Factory ostools.
-# if not, it's just wrapping back around to what mocha said
+from data.structure.pc_widget import PesterchumWidget
 
-# and if this proves to be impossible, we're moving to java
+class ProfileSelectWidget(QDialog, PesterchumWidget):
 
-class ProfileSelectWidget(QDialog):
+    def build(self) -> None:
+        pass
+
+    def assign_signals(self) -> None:
+        pass
 
     layout = QVBoxLayout()
     ###
