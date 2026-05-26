@@ -1,6 +1,6 @@
 <h1 align="center" style="font-family: 'Courier New';">
     <b>
-        <img alt="PESTERCHUM" src="assets/img/repo/pcrw.png">
+        <img alt="PESTERCHUM" src="assets/repo/pcrw.png">
         </b>
     <a href="https://github.com/maloryware/pesterchum-rewritten/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/maloryware/pesterchum-rewritten/total?style=for-the-badge"></a>
     <a href="https://discord.gg/BbHvdwN"><img alt="Community Discord" src="https://img.shields.io/discord/761299023121350726?color=blue&label=COMMUNITY%20DISCORD&logo=discord&style=for-the-badge"></a>
