@@ -1,0 +1,12 @@
+[project]
+name = "pesterchum-rewritten"
+version = "0.0.0"
+description = "A full rewrite of ghostDunk's Pesterchum."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "certifi>=2026.5.20",
+    "pyside6>=6.11.1",
+]
+
+

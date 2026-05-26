@@ -1,0 +1,8 @@
+# ide
+
+.venv/
+.idea/
+.vscode/
+uv.lock
+.python-version
+.pesterchum_data/
