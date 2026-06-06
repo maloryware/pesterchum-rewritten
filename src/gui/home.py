@@ -2,7 +2,7 @@ from PySide6 import QtCore
 from PySide6.QtCore import QSize, Slot
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
-from data.structure.pc_widget import PesterchumWidget
+from data.base.pc_widget import PesterchumWidget
 from gui.dialog.profile_select import ProfileSelectWidget
 
 

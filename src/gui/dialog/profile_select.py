@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QDialog, QCompleter
 from PySide6.QtGui import QAction
 
-from data.structure.pc_widget import PesterchumWidget
+from data.base.pc_widget import PesterchumWidget
 
 class ProfileSelectWidget(QDialog, PesterchumWidget):
 

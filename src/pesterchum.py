@@ -6,6 +6,8 @@ from logging import Logger
 from PySide6.QtCore import QObject
 from PySide6.QtWidgets import QApplication
 
+from gui.tray import PesterTray
+
 
 # from data.component import Profile
 # from data.config import Config
@@ -20,13 +22,12 @@ from PySide6.QtWidgets import QApplication
 
 class Pesterchum(QObject):
 
-    # user: UserProfile
-    # config: PesterchumConfig
+    # tray: PesterTray
 
     def __init__(self, /) -> None:
-        self.app = QApplication()
-        # self.user = UserProfile(self)
-        # self.config = PesterchumConfig()
-
         super().__init__()
+
+        self.app = QApplication()
+        self.app.setApplicationName("Pesterchum")
+
         raise NotImplementedError
