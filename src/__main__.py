@@ -3,6 +3,7 @@ import sys
 from PySide6.QtWidgets import QApplication
 
 from data.component.theme import PesterchumTheme
+from data.pc_config import PesterchumConfig
 from ostools.dirtools import validate_data_dir
 from util.common import LOGGER
 
@@ -27,16 +28,13 @@ def main():
         LOGGER.exception(f"Exception running Pesterchum: {e}")
     finally:
         if status is None:
-            LOGGER.critical("CRITICAL ERROR! Failed to execute QApplication!!!")
-        LOGGER.info(f"Exiting with status code {status}")
+            LOGGER.critical("wharrahell... failed to execute QApplication!!!")
+        LOGGER.info(f"exiting with status code {status}")
 
 # main()
 
 def test():
-    validate_data_dir()
-    themes = PesterchumTheme.get_available_themes(include_repo_themes=True)
-    print("Themes:")
-    print(themes)
-    # raise NotImplementedError
+    conf = PesterchumConfig(None)
+    conf.save()
 
 test()
