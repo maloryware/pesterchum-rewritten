@@ -1,24 +1,28 @@
-roadmap:
+beta, core features:
 - [ ] data system (user, config)
 - [ ] home widget
-- [ ] memo widget
-- [ ] chat widget
 - [ ] settings widget
 - [ ] userlist widget
+- [ ] chat widget
+- [ ] memo widget
 - [ ] data system (theme)
 - [ ] irc functionality
-
+- [ ] pyinstaller packaging
 
 bugs:
-- ...
+- n/a
 
+late-stage core features:
+- quirks
+- in-message smilies
+- ssl/tls encryption
 
-core, extra:
-- broadcast text color info thru metadata (+ builtin gradient support) -- maybe server-cached?
-- enable text color toggling & background color control for text that blends with the theme
-
+super late-stage features:
+- auto-updater
 
 bonus:
+- broadcast text color info thru metadata (+ builtin gradient support) -- maybe server-cached?
+- enable text color toggling & background color control for text that blends with the theme
 - persistent chat history
 - user list sorting
 - profile migration
