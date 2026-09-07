@@ -35,7 +35,7 @@ Some resources have been reused, such as themes and fonts.
  - Works better with high resolutions since size scales via Qt's [high DPI scaling](https://doc.qt.io/qt-6/highdpi.html) (https://github.com/Dpeta/pesterchum-alt-servers/issues/66)
  - Usable with Wayland on Linux, it used to break because of the way Pesterchum set its window position
  - Excecutables build with PyInstaller, allows for a smaller release filesize + dlls can be include with the binary
- - Lots of fixes for miscellaneous crashes/issues. . . check out the <a href="assets/alt-servers/CHANGELOG.md">CHANGELOG</a>! :3
+ - Lots of fixes for miscellaneous crashes/issues. . . check out the <a href="assets/docs/alt-servers/CHANGELOG.md">CHANGELOG</a>! :3
 </details>
 - Built-in auto-updater
 
