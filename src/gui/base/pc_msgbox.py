@@ -1,10 +1,6 @@
-from typing import Self
-
 from PySide6.QtWidgets import QMessageBox
 
-
 class PesterchumMsgBox:
-
 
     def __init__(self):
         self.box = QMessageBox()

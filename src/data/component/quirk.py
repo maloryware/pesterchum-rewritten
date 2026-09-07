@@ -7,6 +7,7 @@ class QuirkType(Enum):
     REGEXP = "Regexp Replace"
     RANDOM = "Random Replace"
     SPELLING = "Mispeller"
+#    GRADIENT = "Gradient"
 
 class Quirk:
     source: str     # "from" field

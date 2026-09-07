@@ -7,12 +7,12 @@ class PesterchumData(ABC):
     """
     @abstractmethod
     def load(self) -> None:
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def save(self) -> None:
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def get_dir(self) -> str:
-        pass
+        raise NotImplementedError

@@ -21,9 +21,7 @@ This repository is a clean, modernized version of [ghostDunk's Pesterchum](https
 Some resources have been reused, such as themes and fonts.
 
 ## PLANNED FEATURES
-<details>
-<summary> Every feature from Lumi's Fork <b>[click to expand]</b>: </summary>
-
+<details><summary> Every feature from Lumi's Fork <b>[click to expand]</b>: </summary>
  - Updated dependencies; [Python 2 --> Python 3](https://www.python.org/doc/sunset-python-2/) // [Qt4 --> Qt5 & Qt6](https://www.qt.io/blog/2014/11/27/qt-4-8-x-support-to-be-extended-for-another-year)
  - Server Selection GUI
  - Client → Server [TLS/SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) encryption
