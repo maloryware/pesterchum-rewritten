@@ -76,7 +76,7 @@ class PesterchumConfig(PesterchumData):
     auto_join_memos: list[str] = [] # imported from profile
 
     ### hidden ###
-    default_profile: str = None
+    default_profile: str | None = None
     reveal_dev_settings: bool = False
     enable_dev_mode: bool = False
 

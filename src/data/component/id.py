@@ -17,15 +17,15 @@ class PesterchumID:
 
     handle: str
     color: QColor
-    mood: None
+    mood: Mood
 
     def __init__(
             self,
             handle: str,
             color: Any = QColor(0x000000),
             mood: Mood = Moods.OFFLINE,
-            notes: str = None,
-            group: str = None,
+            notes: str | None = None,
+            group: str | None = None,
     ):
         self.handle = handle
         self.color = color
