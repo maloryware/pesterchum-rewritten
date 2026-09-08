@@ -2,7 +2,7 @@ import os
 
 from PySide6.QtCore import QStandardPaths
 
-from ostools.systools import is_osx, is_linux, is_win32, is_osx_bundle
+from ostools.systools import is_osx, is_linux, is_win, is_osx_bundle
 from util.common import LOGGER
 
 _DATA_DIR: str
@@ -55,7 +55,7 @@ def get_data_dir() -> str:
         # seemed like the safest way to do this without breaking half of this program
         return _DATA_DIR
 
-    if is_osx() or is_win32():
+    if is_osx() or is_win():
         return os.path.join(
             QStandardPaths.writableLocation(
                 QStandardPaths.StandardLocation.AppLocalDataLocation
