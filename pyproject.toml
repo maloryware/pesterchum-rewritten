@@ -1,12 +1,21 @@
 [project]
 name = "pesterchum-rewritten"
+authors = [
+    {name = "maloryware", email = "malory@onenetbeyond.org"}
+]
 version = "0.0.0"
 description = "A full rewrite of ghostDunk's Pesterchum."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "certifi>=2026.5.20",
-    "pyside6>=6.11.1",
+    "pyside6==6.11.2",
+    "taskipy>=1.14.1"
 ]
 
-
+[tool.taskipy.tasks]
+init = "python3 -m pip install ."
+# run = "python3 "
+test = "python3 src/__main__.py"
+# lint =
+# publish =
