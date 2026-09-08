@@ -7,10 +7,11 @@ beta, core features:
 - [ ] memo widget
 - [ ] data system (theme)
 - [ ] irc functionality
-- [ ] pyinstaller packaging
+- [-] pyinstaller packaging
+  - missing interactive prompting functionality
 
 bugs:
-- n/a
+...
 
 late-stage core features:
 - quirks
@@ -19,6 +20,9 @@ late-stage core features:
 
 super late-stage features:
 - auto-updater
+- translation system a-la i18n (per-theme basis)
+- better user report system
+- better bug report system
 
 bonus:
 - broadcast text color info thru metadata (+ builtin gradient support) -- maybe server-cached?
@@ -34,4 +38,4 @@ bonus:
 bugs present in alt-servers:
 - SSLEof (beats me)
 - unplugged audio devices are entirely forgotten (store preferences, go by order, skip unavailable during selection)
-- quirk panel breaking when a quirk script is removed (will become obsolete with built-in gradients)
+- quirk panel breaking when a quirk script is removed (fixed with built-in gradients)

@@ -1,9 +1,14 @@
 # ide
-
 .venv/
 .idea/
 .vscode/
-uv.lock
+
+# metadata
 .python-version
 .pesterchum_data/
+*.lock
+
+# build info
 build/
+dist/
+*.spec

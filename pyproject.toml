@@ -11,13 +11,15 @@ dependencies = [
     "pyinstaller>=6.22.2",
     "pyside6==6.11.2",
     "certifi>=2026.5.20",
-    "taskipy>=1.14.1"
+    "taskipy>=1.14.1",
 ]
 
 [tool.taskipy.tasks]
 init = "python3 -m pip install ."
 # run = "python3 src/pesterchum.py"
+# build =
+build = "python3 build.py"
 test = "python3 src/__main__.py"
-build = "python3 -m pyinst"
 # lint =
 # publish =
+
